@@ -30,7 +30,7 @@ export const Header = () => {
 
   return (
     <div className="topContainer">
-      <div>
+      <div className="brandContainer">
         <h2 className="gradientName">Kyle Sanders</h2>
       </div>
 
@@ -61,7 +61,7 @@ export const Header = () => {
           Contact
         </a>
 
-        <div className="resumeContainer">
+        <div className="resumeContainer mobileResumeContainer">
           <button
             onClick={() => {
               downloadFile();
@@ -72,6 +72,12 @@ export const Header = () => {
             Resume
           </button>
         </div>
+      </div>
+
+      <div className="resumeContainer desktopResumeContainer">
+        <button onClick={downloadFile} className="resumeButton">
+          Resume
+        </button>
       </div>
     </div>
   );

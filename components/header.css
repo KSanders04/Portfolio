@@ -8,11 +8,16 @@
   transform: translateX(-50%);
   z-index: 10000;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
   background-color: rgba(0, 0, 0, 0.55);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
+}
+
+.brandContainer {
+  flex-shrink: 0;
 }
 
 .menuGroup {
@@ -46,6 +51,10 @@
   margin-left: auto;
 }
 
+.mobileResumeContainer {
+  display: none;
+}
+
 .resumeButton {
   background-color: #0077ff;
 }
@@ -55,9 +64,6 @@
   margin-left: auto;
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.08);
   cursor: pointer;
   padding: 8px;
 }
@@ -88,7 +94,7 @@
 
 @media (max-width: 768px) {
   .topContainer {
-    width: calc(100% - 20px);
+    width: calc(80% - 20px);
     padding: 0.7rem 1rem;
     justify-content: space-between;
   }
@@ -106,6 +112,7 @@
     top: calc(100% + 8px);
     left: 0;
     right: 0;
+    transform: none;
     display: none;
     flex-direction: column;
     align-items: stretch;
@@ -124,7 +131,7 @@
   .menuTitles {
     display: block;
     width: 100%;
-    padding: 0.8rem 0.9rem;
+    padding: 0.8rem 0;
     border-radius: 10px;
   }
 
@@ -140,7 +147,28 @@
     padding: 0.4rem 0.25rem 0.2rem;
   }
 
+  .desktopResumeContainer {
+    display: none;
+  }
+
+  .mobileResumeContainer {
+    display: block;
+  }
+
   .resumeButton {
     width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .topContainer {
+    position: fixed;
+  }
+
+  .menuGroup {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    flex: 0;
   }
 }
