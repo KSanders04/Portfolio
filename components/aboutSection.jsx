@@ -1,6 +1,6 @@
 import "./aboutSection.css";
 import React from "react";
-import stockPerson from "../src/assets/images/StockImagePerson.webp";
+import kylePhoto from "../assets/photo.png";
 
 export const AboutSection = () => {
   return (
@@ -23,11 +23,9 @@ export const AboutSection = () => {
             my skills, grow as a software developer, and work on meaningful,
             impactful projects.
           </p>
-          <img
-            className="programmingImg"
-            src={stockPerson}
-            alt="Stock Person"
-          />
+          <div className="aboutImageFrame">
+            <img src={kylePhoto} alt="Kyle Sanders" />
+          </div>
         </div>
       </div>
     </section>

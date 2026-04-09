@@ -1,10 +1,11 @@
 import React from "react";
 import "./projectSection.css";
+import portfolioPhoto from "../../assets/portfolioPicture.png";
 
 export const PersonalPortfolio = () => {
   return (
     <div className="projectCard" data-aos="fade-up">
-      <img src="/images/ReactLogo.png" alt="Portfolio" />
+      <img src={portfolioPhoto} alt="Portfolio" />
       <div className="projectDescrContainer">
         <h3>Personal Portfolio</h3>
         <p className="description">
@@ -33,7 +34,7 @@ export const PersonalPortfolio = () => {
             marginBlock: 10,
           }}
         >
-          <a href="https://github.com/KSanders04/portfolio.github.io">
+          <a href="https://github.com/KSanders04/Portfolio">
             Source Code
           </a>
         </div>
