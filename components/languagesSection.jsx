@@ -14,6 +14,11 @@ import firebaseLogo from "../src/assets/images/FirebaseLogo.png";
 import mongodbLogo from "../src/assets/images/mongodbLogo.svg";
 import mysqlLogo from "../src/assets/images/mysqlLogo.png";
 import vueLogo from "../src/assets/images/vueLogo.png";
+import gitLogo from "../assets/gitLogo.png";
+import jestLogo from "../assets/jestLogo.png";
+import linuxLogo from "../assets/linuxLogo.png"
+import androidStudioLogo from "../assets/androidStudioLogo.png"
+import figmaLogo from "../assets/figmaLogo.svg"
 
 export const LanguagesSection = () => {
   return (
@@ -80,18 +85,18 @@ export const LanguagesSection = () => {
           <div className="frontEndGrid">
             <img
               className="programmingImg"
-              src={javascriptLogo}
-              alt="JavaScript"
+              src={gitLogo}
+              alt="Git"
             />
             <img
               className="programmingImg"
-              src={typescriptLogo}
-              alt="TypeScript"
+              src={jestLogo}
+              alt="Jest"
             />
-            <img className="programmingImg" src={pythonLogo} alt="Python" />
-            <img className="programmingImg" src={javaLogo} alt="Java" />
-            <img className="programmingImg" src={cLogo} alt="C" />
-            <img className="programmingImg" src={sqlLogo} alt="SQL" />
+            <img className="programmingImg" src={linuxLogo} alt="Linux" />
+            <img className="programmingImg" src={androidStudioLogo} alt="Android Studio" />
+            <img className="programmingImg" src={figmaLogo} alt="Figma" />
+            {/* <img className="programmingImg" src={sqlLogo} alt="SQL" /> */}
           </div>
         </div>
       </div>
