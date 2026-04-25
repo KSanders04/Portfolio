@@ -33,17 +33,20 @@
   align-items: center;
   gap: 40px;
   padding-inline: 2em;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .skillContainer {
   display: flex;
   flex-direction: column;
   align-content: center;
   width: 100%;
-  max-width: 1300px;
   background: #1c1c1c;
   border-radius: 12px;
   padding: 30px 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .skillContainer:hover {
   transform: translateY(-8px);

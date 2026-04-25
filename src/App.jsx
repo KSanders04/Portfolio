@@ -8,6 +8,7 @@ import { AboutSection } from "../components/aboutSection";
 import { LanguagesSection } from "../components/languagesSection";
 import { ProjectSection } from "../components/projectSection/projectSection";
 import { Footer } from "../components/footer";
+import { ExperienceSection } from "../components/experienceSection";
 
 function App() {
   useEffect(() => {
@@ -24,11 +25,13 @@ function App() {
 
       <AboutSection />
 
-      <LanguagesSection/>
+      <LanguagesSection />
 
-      <ProjectSection/>
+      <ExperienceSection />
 
-      <Footer/>
+      <ProjectSection />
+
+      <Footer />
     </>
   );
 }

@@ -54,6 +54,9 @@ export const Header = () => {
         <a href="#languageSection" className="menuTitles" onClick={closeMenu}>
           Languages
         </a>
+        <a href="#experienceSection" className="menuTitles" onClick={closeMenu}>
+          Experience
+        </a>
         <a href="#projectSection" className="menuTitles" onClick={closeMenu}>
           Projects
         </a>
