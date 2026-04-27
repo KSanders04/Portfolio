@@ -16,11 +16,38 @@ import mysqlLogo from "../src/assets/images/mysqlLogo.png";
 import vueLogo from "../src/assets/images/vueLogo.png";
 import gitLogo from "../assets/gitLogo.png";
 import jestLogo from "../assets/jestLogo.png";
-import linuxLogo from "../assets/linuxLogo.png"
-import androidStudioLogo from "../assets/androidStudioLogo.png"
-import figmaLogo from "../assets/figmaLogo.svg"
+import linuxLogo from "../assets/linuxLogo.png";
+import androidStudioLogo from "../assets/androidStudioLogo.png";
+import figmaLogo from "../assets/figmaLogo.svg";
 
 export const LanguagesSection = () => {
+  const technicalSkills = [
+    {
+      image: javascriptLogo,
+      alt: "JavaScript",
+    },
+    {
+      image: typescriptLogo,
+      alt: "TypeScript",
+    },
+    {
+      image: pythonLogo,
+      alt: "Python",
+    },
+    {
+      image: javaLogo,
+      alt: "Java",
+    },
+    {
+      image: cLogo,
+      alt: "C",
+    },
+    {
+      image: sqlLogo,
+      alt: "SQL",
+    },
+  ];
+
   return (
     <section className="sectionContainer" id="languageSection">
       <h2 className="sectionTitle" data-aos="fade-up">
@@ -31,20 +58,13 @@ export const LanguagesSection = () => {
         <div className="skillContainer" data-aos="fade-up">
           <h3>Languages</h3>
           <div className="frontEndGrid">
-            <img
-              className="programmingImg"
-              src={javascriptLogo}
-              alt="JavaScript"
-            />
-            <img
-              className="programmingImg"
-              src={typescriptLogo}
-              alt="TypeScript"
-            />
-            <img className="programmingImg" src={pythonLogo} alt="Python" />
-            <img className="programmingImg" src={javaLogo} alt="Java" />
-            <img className="programmingImg" src={cLogo} alt="C" />
-            <img className="programmingImg" src={sqlLogo} alt="SQL" />
+            {technicalSkills.map((technicalSkill) => (
+              <img
+                className="programmingImg"
+                src={technicalSkill.image}
+                alt={technicalSkill.alt}
+              />
+            ))}
           </div>
         </div>
 
@@ -80,23 +100,19 @@ export const LanguagesSection = () => {
             </div>
           </div>
         </div>
+
         <div className="skillContainer" data-aos="fade-up">
           <h3>Tools & Testing</h3>
           <div className="frontEndGrid">
-            <img
-              className="programmingImg"
-              src={gitLogo}
-              alt="Git"
-            />
-            <img
-              className="programmingImg"
-              src={jestLogo}
-              alt="Jest"
-            />
+            <img className="programmingImg" src={gitLogo} alt="Git" />
+            <img className="programmingImg" src={jestLogo} alt="Jest" />
             <img className="programmingImg" src={linuxLogo} alt="Linux" />
-            <img className="programmingImg" src={androidStudioLogo} alt="Android Studio" />
+            <img
+              className="programmingImg"
+              src={androidStudioLogo}
+              alt="Android Studio"
+            />
             <img className="programmingImg" src={figmaLogo} alt="Figma" />
-            {/* <img className="programmingImg" src={sqlLogo} alt="SQL" /> */}
           </div>
         </div>
       </div>
