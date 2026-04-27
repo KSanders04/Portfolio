@@ -47,6 +47,24 @@ export const LanguagesSection = () => {
       alt: "SQL",
     },
   ];
+  const frontendSkills = [
+    {
+      image: html5Logo,
+      alt: "HTML5",
+    },
+    {
+      image: css3Logo,
+      alt: "CSS3",
+    },
+    {
+      image: reactLogo,
+      alt: "React",
+    },
+    {
+      image: vueLogo,
+      alt: "Vue",
+    },
+  ];
 
   return (
     <section className="sectionContainer" id="languageSection">
@@ -79,10 +97,13 @@ export const LanguagesSection = () => {
           <div className="skillContainer" data-aos="fade-up">
             <h3>Frontend</h3>
             <div className="frontEndGrid">
-              <img className="programmingImg" src={html5Logo} alt="HTML5" />
-              <img className="programmingImg" src={css3Logo} alt="CSS3" />
-              <img className="programmingImg" src={reactLogo} alt="React" />
-              <img className="programmingImg" src={vueLogo} alt="Vue" />
+              {frontendSkills.map((frontendSkill) => (
+                <img
+                  className="programmingImg"
+                  src={frontendSkill.image}
+                  alt={frontendSkill.alt}
+                />
+              ))}
             </div>
           </div>
 
