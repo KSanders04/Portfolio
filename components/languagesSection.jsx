@@ -65,6 +65,24 @@ export const LanguagesSection = () => {
       alt: "Vue",
     },
   ];
+  const backendSkills = [
+    {
+      image: nodejsLogo,
+      alt: "Node.js",
+    },
+    {
+      image: firebaseLogo,
+      alt: "Firebase",
+    },
+    {
+      image: mongodbLogo,
+      alt: "MongoDB",
+    },
+    {
+      image: mysqlLogo,
+      alt: "mySQL",
+    },
+  ];
 
   return (
     <section className="sectionContainer" id="languageSection">
@@ -110,14 +128,13 @@ export const LanguagesSection = () => {
           <div className="skillContainer" data-aos="fade-up">
             <h3>Backend</h3>
             <div className="frontEndGrid">
-              <img className="programmingImg" src={nodejsLogo} alt="Node.js" />
-              <img
-                className="programmingImg"
-                src={firebaseLogo}
-                alt="Firebase"
-              />
-              <img className="programmingImg" src={mongodbLogo} alt="MongoDB" />{" "}
-              <img className="programmingImg" src={mysqlLogo} alt="mySQL" />
+              {backendSkills.map((backendSkill) => (
+                <img
+                  className="programmingImg"
+                  src={backendSkill.image}
+                  alt={backendSkill.alt}
+                />
+              ))}
             </div>
           </div>
         </div>
