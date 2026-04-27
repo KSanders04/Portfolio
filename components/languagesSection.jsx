@@ -1,5 +1,4 @@
 import "./languagesSection.css";
-import React from "react";
 import reactLogo from "../src/assets/images/ReactLogo.png";
 import javaLogo from "../src/assets/images/javaLogo.png";
 import javascriptLogo from "../src/assets/images/javascriptLogo.png";
@@ -19,6 +18,19 @@ import jestLogo from "../assets/jestLogo.png";
 import linuxLogo from "../assets/linuxLogo.png";
 import androidStudioLogo from "../assets/androidStudioLogo.png";
 import figmaLogo from "../assets/figmaLogo.svg";
+
+const SkillCard = ({ title, skills }) => {
+  return (
+    <div className="skillContainer" data-aos="fade-up">
+      <h3>{title}</h3>
+      <div className="frontEndGrid">
+        {skills.map(({ image, alt }) => (
+          <img key={alt} className="programmingImg" src={image} alt={alt} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export const LanguagesSection = () => {
   const technicalSkills = [
@@ -80,7 +92,7 @@ export const LanguagesSection = () => {
     },
     {
       image: mysqlLogo,
-      alt: "mySQL",
+      alt: "MySQL",
     },
   ];
   const tools = [
@@ -113,62 +125,14 @@ export const LanguagesSection = () => {
       </h2>
 
       <div className="wrap">
-        <div className="skillContainer" data-aos="fade-up">
-          <h3>Languages</h3>
-          <div className="frontEndGrid">
-            {technicalSkills.map((technicalSkill) => (
-              <img
-                className="programmingImg"
-                src={technicalSkill.image}
-                alt={technicalSkill.alt}
-              />
-            ))}
-          </div>
+        <SkillCard title="Languages" skills={technicalSkills} />
+
+        <div className="dualSkillRow">
+          <SkillCard title="Frontend" skills={frontendSkills} />
+          <SkillCard title="Backend" skills={backendSkills} />
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            width: "100%",
-            gap: 50,
-          }}
-        >
-          <div className="skillContainer" data-aos="fade-up">
-            <h3>Frontend</h3>
-            <div className="frontEndGrid">
-              {frontendSkills.map((frontendSkill) => (
-                <img
-                  className="programmingImg"
-                  src={frontendSkill.image}
-                  alt={frontendSkill.alt}
-                />
-              ))}
-            </div>
-          </div>
-
-          <div className="skillContainer" data-aos="fade-up">
-            <h3>Backend</h3>
-            <div className="frontEndGrid">
-              {backendSkills.map((backendSkill) => (
-                <img
-                  className="programmingImg"
-                  src={backendSkill.image}
-                  alt={backendSkill.alt}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className="skillContainer" data-aos="fade-up">
-          <h3>Tools & Testing</h3>
-          <div className="frontEndGrid">
-            {tools.map((tool) => (
-              <img className="programmingImg" src={tool.image} alt={tool.alt} />
-            ))}
-          </div>
-        </div>
+        <SkillCard title="Tools & Testing" skills={tools} />
       </div>
     </section>
   );

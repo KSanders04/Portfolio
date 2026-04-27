@@ -1,7 +1,6 @@
 .sectionContainer {
   width: 100%;
   padding: 60px 0px 20px;
-  /* background: #2a2a2a; */
   text-align: center;
   scroll-margin-top: 4.5rem;
 }
@@ -74,4 +73,17 @@
 .frontEndGrid img {
   width: 80px;
   height: auto;
+}
+
+.dualSkillRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 50px;
+}
+
+@media (max-width: 900px) {
+  .dualSkillRow {
+    gap: 5px;
+  }
 }
