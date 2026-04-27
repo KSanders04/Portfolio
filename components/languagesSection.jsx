@@ -83,6 +83,28 @@ export const LanguagesSection = () => {
       alt: "mySQL",
     },
   ];
+  const tools = [
+    {
+      image: gitLogo,
+      alt: "Git",
+    },
+    {
+      image: jestLogo,
+      alt: "Jest",
+    },
+    {
+      image: linuxLogo,
+      alt: "Linux",
+    },
+    {
+      image: androidStudioLogo,
+      alt: "Android Studio",
+    },
+    {
+      image: figmaLogo,
+      alt: "Figma",
+    },
+  ];
 
   return (
     <section className="sectionContainer" id="languageSection">
@@ -142,15 +164,9 @@ export const LanguagesSection = () => {
         <div className="skillContainer" data-aos="fade-up">
           <h3>Tools & Testing</h3>
           <div className="frontEndGrid">
-            <img className="programmingImg" src={gitLogo} alt="Git" />
-            <img className="programmingImg" src={jestLogo} alt="Jest" />
-            <img className="programmingImg" src={linuxLogo} alt="Linux" />
-            <img
-              className="programmingImg"
-              src={androidStudioLogo}
-              alt="Android Studio"
-            />
-            <img className="programmingImg" src={figmaLogo} alt="Figma" />
+            {tools.map((tool) => (
+              <img className="programmingImg" src={tool.image} alt={tool.alt} />
+            ))}
           </div>
         </div>
       </div>
