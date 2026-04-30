@@ -37,9 +37,14 @@
 }
 .menuTitles {
   color: #fff;
-  padding-inline: 1rem;
-  font-size: clamp(1rem, 3vw, 1.3rem);
+  padding-inline: 0.6rem;
+  font-size: clamp(0.5rem, 3vw, 1.3rem);
   text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 .menuTitles:hover {
   color: #0077ff;
@@ -93,7 +98,7 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
   .topContainer {
     width: calc(80% - 20px);
     padding: 0.7rem 1rem;
