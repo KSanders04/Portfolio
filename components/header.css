@@ -38,7 +38,7 @@
 .menuTitles {
   color: #fff;
   padding-inline: 0.6rem;
-  font-size: clamp(0.5rem, 3vw, 1.3rem);
+  font-size: clamp(0.5rem, 3vw, 1.2rem);
   text-decoration: none;
   transition:
     transform 0.2s ease,
