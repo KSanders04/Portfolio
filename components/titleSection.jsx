@@ -9,33 +9,10 @@ export const TitleSection = () => {
     <div className="container">
       <div className="heroInner">
         <div className="heroText">
-          <h3
-            style={{
-              fontSize: "2rem",
-              fontWeight: 400,
-              color: "#555",
-              marginBottom: "-1.5em",
-            }}
-          >
-            Hi, I'm
-          </h3>
-          <h1
-            style={{
-              fontSize: "4rem",
-              lineHeight: 1.2,
-              marginBottom: "1rem",
-            }}
-          >
-            Kyle Sanders
-          </h1>
+          <h3>Hi, I'm</h3>
+          <h1>Kyle Sanders</h1>
 
-          <h2
-            style={{
-              fontSize: "2.5rem",
-              fontWeight: 400,
-              color: "#e87452",
-            }}
-          >
+          <h2>
             <Typewriter
               words={[
                 "Full Stack Developer",
