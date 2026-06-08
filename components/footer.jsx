@@ -3,6 +3,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
+  const resumeUrl = `${import.meta.env.BASE_URL}files/KyleSandersResume.pdf`;
+
   return (
     <footer id="contactFooter">
       <div className="footer">
@@ -11,7 +13,7 @@ export const Footer = () => {
         <p className="contactLinks">
           <a href="mailto:kasanders2004@gmail.com">Email</a> |{" "}
           <a href="tel:+19376817402">Phone Number</a> |{" "}
-          <a href="/files/KyleSandersResume.pdf" download>
+          <a href={resumeUrl} download>
             Resume
           </a>
         </p>

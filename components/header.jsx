@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const resumeUrl = `${import.meta.env.BASE_URL}files/KyleSandersResume.pdf`;
 
   useEffect(() => {
     function handleResize() {
@@ -17,8 +18,8 @@ export const Header = () => {
 
   function downloadFile() {
     const link = document.createElement("a");
-    link.href = "/files/KyleSandersResume.pdf";
-    link.download = "Resume.pdf";
+    link.href = resumeUrl;
+    link.download = "KyleSandersResume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -31,7 +32,7 @@ export const Header = () => {
   return (
     <div className="topContainer">
       <div className="brandContainer">
-        <h2 className="gradientName">Kyle Sanders</h2>
+        <button className="gradientName">Kyle Sanders</button>
       </div>
 
       <button
@@ -49,7 +50,7 @@ export const Header = () => {
 
       <div id="main-nav" className={`menuGroup ${isMenuOpen ? "open" : ""}`}>
         <a href="#aboutMeSection" className="menuTitles" onClick={closeMenu}>
-          About Me
+          About
         </a>
         <a href="#languageSection" className="menuTitles" onClick={closeMenu}>
           Languages

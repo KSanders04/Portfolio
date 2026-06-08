@@ -11,15 +11,17 @@ export const AboutSection = () => {
       <div className="aboutWrap">
         <div className="aboutContainer" data-aos="fade-up">
           <p>
-            I'm a computer science student at Ball State University expecting to
-            graduate in May 2026. My main focus is on web and mobile development
-            as well as cybersecurity. I not only love making web and mobile apps
-            look good but also ones that load fast, are accessible, and writing
-            maintainable code.
+            I graduated from Ball State University in May 2026 with a degree in
+            Computer Science. My primary areas of focus are web development,
+            mobile development, and cybersecurity. I enjoy building applications
+            that are not only visually appealing but also fast, accessible, and
+            maintainable. I am passionate about creating high-quality software
+            that delivers a great user experience while following modern
+            development best practices.
             <br />
             <br />
             When I am not writing code, I have a huge passion for cars, working
-            out, and going on hikes. I am looking for new opportunities to apply
+            out, and going golfing. I am looking for new opportunities to apply
             my skills, grow as a software developer, and work on meaningful,
             impactful projects.
           </p>

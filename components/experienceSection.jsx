@@ -18,8 +18,9 @@ export const ExperienceSection = () => {
       company: "Ball State University",
       date: "May 2025 - Aug 2025",
       bullets: [
-        " Designed and built a live sports prediction mobile app with React Native, Typescript, and Firebase, featuring multiple game modes and various leaderboards.",
-        " Worked in a 4-person team, participating in code reviews, planning, and developing through GitHub workflows.",
+        "Designed and built a live sports prediction mobile app with React Native, Typescript, and Firebase, featuring multiple game modes and various leaderboards.",
+        "Worked in a 4-person team, participating in code reviews, planning, and developing through GitHub workflows.",
+        "Coordinated weekly sprint reviews with clients, demonstrating new features and soliciting detailed feedback.",
         "Scaled real-time data updates to support 100+ concurrent users per game with sub-second latency.",
       ],
     },
