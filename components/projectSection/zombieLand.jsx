@@ -24,7 +24,7 @@ export const ZombieLand = () => {
         >
           <p className="usedLang">Python</p>
           <p className="usedLang">Pygame</p>
-          <p className="usedLang">SimpleGe</p>
+          <p className="usedLang">SimpleGE</p>
         </div>
         <div className="divider" />
         <div

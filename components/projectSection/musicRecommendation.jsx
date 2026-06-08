@@ -7,7 +7,7 @@ export const MusicRecommendation = () => {
     <div className="projectCard" data-aos="fade-up">
       <img src={musicRecommendation} alt="Music Recommendation" />
       <div className="projectDescrContainer">
-        <h3>Music Recommendation</h3>
+        <h3>VibeFinder</h3>
         <p className="description">
           A Java Swing application that recommends five artists and five songs
           for a selected genre.

@@ -89,9 +89,9 @@
   border-radius: 9999;
 }
 .usedLang {
-  background-color: #0c89ffff;
-  color: #000000;
+  background-color: #0077ff;
+  color: #ffffff;
   padding-inline: 15px;
   border-radius: 10px;
-  font-weight: 500;
+  font-weight: 400;
 }
