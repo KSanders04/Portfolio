@@ -9,11 +9,11 @@ export const ZombieLand = () => {
       <div className="projectDescrContainer">
         <h3>Zombie Land</h3>
         <p className="description">
-          A python application that allows users to play a top down shooter game
-          where you try to shoot as many zombies as possible
+          A Python application that lets players play a top-down shooter where
+          they try to shoot as many zombies as possible.
         </p>
-        <li>Scoring feature showing how many zombies you have killed in the game</li>
-        <li>Reloading feature where a user only has a certain amout of bullets before they have to reload</li>
+        <li>Scoring feature showing the player's kill count.</li>
+        <li>Reloading feature with limited ammo before needing to reload.</li>
         <div
           style={{
             display: "flex",

@@ -29,10 +29,16 @@ export const Header = () => {
     setIsMenuOpen(false);
   }
 
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <div className="topContainer">
       <div className="brandContainer">
-        <button className="gradientName">Kyle Sanders</button>
+        <button className="gradientName" type="button" onClick={scrollToTop}>
+          Kyle Sanders
+        </button>
       </div>
 
       <button

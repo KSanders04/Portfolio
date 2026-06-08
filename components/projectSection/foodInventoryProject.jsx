@@ -7,7 +7,7 @@ export const FoodInventoryProject = () => {
     <div className="projectCard" data-aos="fade-up">
       <img src={foodHomePage} alt="Food Inventory System" />
       <div className="projectDescrContainer">
-        <h3>Food Inventory System</h3>
+        <h3>ShelfIQ</h3>
         <p className="description">
           A web-based platform that enables food service staff to efficiently
           track in-stock and out-of-stock items.
@@ -29,7 +29,7 @@ export const FoodInventoryProject = () => {
           }}
         >
           <p className="usedLang">React</p>
-          <p className="usedLang">Javascript</p>
+          <p className="usedLang">JavaScript</p>
           <p className="usedLang">MongoDB</p>
         </div>
         <div className="divider" />

@@ -9,16 +9,15 @@ export const MusicRecommendation = () => {
       <div className="projectDescrContainer">
         <h3>Music Recommendation</h3>
         <p className="description">
-          A java swing application that recommends five artists and five songs
-          that meet the selected genre.
+          A Java Swing application that recommends five artists and five songs
+          for a selected genre.
         </p>
         <li>
-          Choose whether you want to view artists, songs or both after choosing
-          which genre you want to discover
+          Choose whether to view artists, songs, or both after selecting a
+          genre.
         </li>
         <li>
-          Users are able to save songs and replay songs inside there
-          personalized playlist
+          Users can save songs and replay them in their personalized playlist.
         </li>
         <div
           style={{

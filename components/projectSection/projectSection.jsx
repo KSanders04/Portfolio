@@ -9,7 +9,7 @@ export const ProjectSection = () => {
   return (
     <section className="sectionContainer" id="projectSection">
       <h2 className="sectionTitle" data-aos="fade-up">
-        Featured  Projects
+        Featured Projects
       </h2>
 
       <div className="projectGrid">
